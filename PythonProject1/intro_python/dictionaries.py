@@ -4,7 +4,7 @@ friends_age["Rolf"] = 20
 friends_age["Bob"] = 40
 print("friends_age :",friends_age)
 
-
+#chave valor
 friends = [
     {"name": "Rolf Smith", "age": 24},
     {"name": "Adam Wool", "age": 30},
@@ -13,6 +13,7 @@ friends = [
 print(friends[0]["name"])
 print(friends[1]["name"])
 print(friends[2]["name"])
+print(friends[1]["age"])
 
 #parse tupla in dictionarie
 friends2 = [("Rolf", 24), ("Bob", 30), ("Anne", 27)]
