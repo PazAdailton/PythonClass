@@ -18,5 +18,13 @@ print(friends[1]["age"])
 #parse tupla in dictionarie
 friends2 = [("Rolf", 24), ("Bob", 30), ("Anne", 27)]
 friends_age = dict(friends2)
-print("friends_age :",friends_age)
+print("friends_age in dict:",friends_age)
+
+#print values
+
+for values_Dictionaries in friends:
+    print(values_Dictionaries.values())
+
+for friend in friends:
+    print(friend["name"], "is", friend["age"], "Years Old")
 
