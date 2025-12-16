@@ -14,7 +14,7 @@ def get_engaged_user(user):
         user.score = perform_calculation(user.engagement_metrics)
     except KeyError:
         print("Incorrect values provided to our calculation function.")
-    else:
+    finally:
         if user.score > 500:
             send_engagement_notification(user)
 
@@ -26,9 +26,3 @@ def send_engagement_notification(user):
 
 my_user = User("Rolf", {'clicks': 61, 'hits': 100})
 get_engaged_user(my_user)
-
-
-
-#raise usar raise dentro do bloco de except não precisa do tipo do error
-#finally sempre será executado
-#Se tiver return dentro do finally ele sempre vence mesmo com return na função

@@ -1,0 +1,3 @@
+club, country, city
+manchester city, UK, manchester
+real madrid, es, madrid
