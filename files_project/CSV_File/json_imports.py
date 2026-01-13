@@ -1,3 +1,10 @@
+"""
+json.load TRANSFORMA JSON EM OBJETO PYTHON
+
+json.dump TRANSFORMA OBJETO PYTHON EM JSON
+"""
+
+
 import  json
 
 #string to dictionary
