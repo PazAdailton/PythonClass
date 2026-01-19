@@ -15,8 +15,8 @@ class firstHundredGenerator:
             raise StopIteration()
 
 my_gen = firstHundredGenerator()
-print(next(my_gen))
-print(next(my_gen))
+# print(next(my_gen))
+# print(next(my_gen))
 
 
 
@@ -27,21 +27,19 @@ class PrimeGenerator:
         self.stop = stop
         self.current = 2  # stop defines the range (exclusive upper bound) in which we search for the primes
 
-    def __iter__(self):
-        return self
-
     def __next__(self):
-        while self.current < self.stop:
-            n = self.current
-            self.current += 1
+            for n in range(self.current, self.stop):
+                for x in range(2, n):
+                    if n % x == 0:
+                        break
 
-            for x in range(2, n):
-                if n % x == 0:
-                    break
-            else:
-                return n
-        raise StopIteration()
+                else:
+                    self.current = n + 1
+                    return n
 
+            raise StopIteration()
 
 g = PrimeGenerator(15)
+print(next(g))
+print(next(g))
 print(next(g))

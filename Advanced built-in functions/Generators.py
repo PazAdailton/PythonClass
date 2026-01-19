@@ -1,5 +1,5 @@
 """
-    yield return from where function was stopped
+    yield return from where function was stopped // one by one
      // return int of division
 """
 def hundred_numbers():
