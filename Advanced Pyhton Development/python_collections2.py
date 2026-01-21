@@ -21,6 +21,15 @@ o.move_to_end('Rolf')
 
 print(o)
 
-o.popitem()
+o.popitem() #remove the last
+
+print(o)
+
+o.move_to_end('Jen', last=False) #move to start
+print(o)
+
+first_element = next(iter(o)) #get first element
+
+o.popitem(False) #remove the first element
 
 print(o)
