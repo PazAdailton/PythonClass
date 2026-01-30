@@ -1,7 +1,7 @@
 import time
 
 def measure_runtime(func):
-    start = start = time.time()
+    start = time.time()
     func()
     end = time.time()
     print(end - start)
