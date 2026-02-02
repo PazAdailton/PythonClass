@@ -11,6 +11,15 @@ Four most important components
 
  "\" literal of symbol
 
-
-
 """
+
+import re
+
+
+name = 'charlie'
+email = 'jose@tecladocode.com'
+
+regexer = '[a-z]'
+
+match = re.findall(regexer, name)
+print(match)

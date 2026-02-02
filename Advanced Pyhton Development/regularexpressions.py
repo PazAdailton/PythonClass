@@ -1,6 +1,0 @@
-""""
-Four most important components
-
-
-
-"""
