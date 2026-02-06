@@ -1,0 +1,8 @@
+2026-02-05 22:46:04,082 INFO     [logging_in_python.py:11] This will not show up.
+2026-02-05 22:46:04,082 WARNING  [logging_in_python.py:12] This wil
+2026-02-05 22:46:04,083 DEBUG    [logging_in_python.py:13] This is a debug message.
+2026-02-05 22:46:04,083 CRITICAL [logging_in_python.py:14] A critical error occurred
+05-02-26 22:52:29 INFO     [logging_in_python.py:12] This will not show up.
+05-02-26 22:52:29 WARNING  [logging_in_python.py:13] This wil
+05-02-26 22:52:29 DEBUG    [logging_in_python.py:14] This is a debug message.
+05-02-26 22:52:29 CRITICAL [logging_in_python.py:15] A critical error occurred
