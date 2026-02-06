@@ -22,6 +22,6 @@ matches = re.search(expression, price)
 print(matches.group(0)) # entire match
 print(matches.group(1)) # first thing in brackets
 
-prince_without_comma = matches.group(1).replace(',', '')
-price_number = float(prince_without_comma)
+price_without_comma = matches.group(1).replace(',', '')
+price_number = float(price_without_comma)
 print(f'float price number {price_number}')
