@@ -10,6 +10,7 @@ SIMPLE_HTML = '''
  <h1> This is a title</h1>
 <p class="subtitle"> Lorem dolor sit amet. Consectetur edipiscim elit.</p>
  <p>Here's another p without a class</p>
+ <p> test second p argument</p> 
 <ul>
     <li>Rolf</li>
     <li>Charlie</li>
@@ -39,10 +40,12 @@ def find_subtitle():
 def find_another_paragraph():
     paragraphs = simple_soup.findAll('p')
     other_paragraph = [p for p in paragraphs if 'subtitle' not in p.attrs.get('class', [])]
-    print(other_paragraph[0].string)
+    #print(other_paragraph[0].string)
+    for p in other_paragraph:
+        print(p.string)
 
 
 find_title()
 find_list_items()
-find_subtitle()
+#find_subtitle()
 find_another_paragraph()
