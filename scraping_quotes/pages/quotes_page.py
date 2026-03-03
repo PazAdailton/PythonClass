@@ -1,5 +1,5 @@
-from scraping_quotes.locators.quotes_page_locators import QuotesPageLocators
-from scraping_quotes.parsers.quotes import ParserQuotes
+from PythonClass.scraping_quotes.locators.quotes_page_locators import QuotesPageLocators
+from PythonClass.scraping_quotes.parsers.quotes import ParserQuotes
 from bs4 import BeautifulSoup
 
 

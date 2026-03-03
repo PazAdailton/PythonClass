@@ -1,6 +1,6 @@
 import requests
 
-from pages.quotes_page import QuotesPages
+from PythonClass.scraping_quotes.pages.quotes_page import QuotesPages
 
 
 page_content = requests.get('https://quotes.toscrape.com/').content

@@ -1,4 +1,4 @@
-from scraping_quotes.locators.quote_locators import QuoteLocators
+from PythonClass.scraping_quotes.locators.quote_locators import QuoteLocators
 
 class ParserQuotes:
     """
